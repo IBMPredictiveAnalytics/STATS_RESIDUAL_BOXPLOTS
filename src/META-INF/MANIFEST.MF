@@ -1,0 +1,18 @@
+Name: STATS_RESIDUAL_BOXPLOTS
+Dialog-Specs: heterosced.spd
+Command-Specs: STATS_RESIDUAL_BOXPLOTS.xml
+Code-Files: STATS_RESIDUAL_BOXPLOTS.R
+Misc-Files: extsyntax.css,Checking Regresion Assumptions Graphically.p
+ df,Readme.md,defaultdialogicon.png,LICENSE,markdown.html
+Summary: Plot residuals against predicted values as a sequence of link
+ ed boxplots
+Description: This procedure creates a sequence of linked boxplots from
+  the residuals and predicted values from a regression or other simila
+ r procedure.  It is useful in checking for heteroscedastic errors and
+  functional form problems.
+Author: Jon K Peck
+Version: 1.0.0
+Product-Version: 24
+Date: 3/15/2021
+Categories: residuals regression graphs
+Plugins: R

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+<link rel="stylesheet" type="text/css" href="extsyntax.css" />
+<title>STATS RESIDUAL BOXPLOTS Extension Command</title>
+
+
+
+</head>
+
+<body>
+<h1>STATS RESIDUAL BOXPLOTS Extension Command</h1>
+
+<p>Plot a set of linked boxplots of the residual against predicted values for results from REGRESSION or a similar procedure.
+This is useful in checking for heteroscedasticity and functional form problems.  The command does not run the regression itself.</p>
+<div class="syntax">
+<p>STATS RESIDUAL BOXPLOTS</br> 
+DEPENDENT=<em>dependent variable</em><sup>&#42;</sup><br/>
+PREDVALS <em>varname</em><sup>&#42;<br/>
+RESIDUALS=<em>varname<sup>&#42;</sup></em><br/>
+LOESS=YES or NO<sup>&#42;&#42;</sup><br/>
+NUMBINS=number<br/></p>
+
+
+
+<p>/HELP</p>
+
+<p><sup>&#42;</sup> Required<br/>
+<sup>&#42;&#42;</sup> Default</p>
+</div>
+
+<p>STATS RESIDUAL BOXPLOTS /HELP.  prints this information and does nothing else.</p>
+
+<pre class="example"><code>
+STATS RESIDUAL BOXPLOTS DEPENDENT=salary
+PREDVALS=DRE_1 RESIDUALS=ADJ_1 
+LOESS=yes.
+</code></pre>
+
+
+<p>There is an article on this procedure that is installed with the extension.
+It is placed in the STATS_RESIDUAL_BOXPLOTS directory under the location where the extension is installed.</p>
+
+<p>SPLIT FILES and weights are not supported by this procedure.</p>
+
+
+<p><strong>DEPENDENT</strong> specifies the name of the dependent variable.  Only its name is used.
+</p>
+<p><strong>RESIDUALS</strong> specifies the name of the preexisting residual values variable.</p>
+<p><strong>PREDVALS</strong> specifies the name of the preexisting predicted values variable.</li>
+<p><strong>LOESS</strong> optionally specifies whether or not to draw loess fit lines for the quintiles of the residuals. </p>
+<p><strong>NUMBINS</strong> optionally specifies the number of boxplots to be drawn.  It must be between 3 and 30.  By
+default, the number of bins is determined by the sample size.</p>
+
+
+<p>&copy; Copyright Jon K Peck. 2021</p>
+
+</body>
+
+</html>
+
