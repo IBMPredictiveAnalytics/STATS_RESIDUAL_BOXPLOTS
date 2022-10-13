@@ -1,4 +1,5 @@
 Name: STATS_RESIDUAL_BOXPLOTS
+Display-Name: Boxplots of Residuals by Predicted Values
 Dialog-Specs: heterosced.spd
 Command-Specs: STATS_RESIDUAL_BOXPLOTS.xml
 Code-Files: STATS_RESIDUAL_BOXPLOTS.R
